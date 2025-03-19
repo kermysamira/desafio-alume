@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border: unset;
+  outline: none;
+}
+
+.input-border {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: var(--input-border-bg-color);
+  transition: 0.3s ease-in-out;
+}
+
+.input-border::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  margin-bottom: 16px;
+  background: var(--input-border-gradient);
+  transition: 0.3s ease-in-out;
+}
+
+.input:focus + .input-border::after {
+  width: 100%;
+}
+
+.label-health {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin: 20px 0 22px 0;
+  display: flex;
+  align-items: center;
+}
+
+.radio-container {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--radio-button);
+  background-color: var(--radio-button-bg-color);
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  line-height: 20px;
+}
+
+.radio-input:checked + label .radio-button {
+  background-color: var(--radio-button);
+  border-color: var(--radio-button);
+}
+
+.radio-button:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--radio-button-bg-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s;
+}
+
+.radio-input:checked + label .radio-button:after {
+  background-color: var(--radio-button-bg-color);
+}
+
+.button-buy {
+  font-family: 'Tech Mono', sans-serif;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  background: var(--button-linear-gradient);
+  background-size: 200%;
+  margin: 20px 0px;
+  color: var(--font-color);
+  font-size: 16px;
+  font-weight: bold;
+  border: unset;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.button-buy:hover {
+  background-position: right;
+}

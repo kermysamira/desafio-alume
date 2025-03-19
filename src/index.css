@@ -1,0 +1,18 @@
+:root {
+  --font-color: #ffffff;
+  --card-background-color: rgba(255, 255, 255, 0.2);
+  --input-border-gradient: linear-gradient(120deg, #842990, #290078);
+  --button-linear-gradient: linear-gradient(120deg, #842990, #290078, #842990);
+  --input-border-bg-color: #cfcfcf;
+  --radio-button: #842990;
+  --radio-button-bg-color: #ffffff;
+  --background-linear-gradient: linear-gradient(120deg, #842990, #290078);
+  --title-color: #842990;
+  --container-bg-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

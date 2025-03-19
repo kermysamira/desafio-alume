@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": "./src", // Isso define o diretório base para resolução de módulos.
+    "paths": {
+      "*": ["node_modules/*", "src/*"] // Permite que o TypeScript reconheça os caminhos relativos a partir de 'src'.
+    },
+    "strict": true, // Habilita as verificações rigorosas do TypeScript.
+    "esModuleInterop": true, // Permite importar módulos do CommonJS.
+    "skipLibCheck": true // Ignora a verificação de tipo em arquivos de declaração (diminui o tempo de compilação).
+  },
+  "include": ["src/**/*"]
+}
